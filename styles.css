@@ -19,6 +19,28 @@ body {
     width: 820px;
 }
 
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+#me {
+    width: 250px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.about-text {
+    text-align: left;
+}
+
+.photo-frameWAI {
+    margin: 0;
+    padding: 10px;
+    border: 1px solid #c8c5bd;
+}
+
 #Aspirations{
     border-right: 1px solid rgb(56, 58, 56);
     padding-right: 50px;
@@ -129,12 +151,8 @@ nav div a + a {
     width: 100%;
     aspect-ratio: 1;
     object-fit: cover;
-    transition: transform 0.3s ease;
 }
 
-.gallery img:hover {
-    transform: scale(1.03);
-}
 
 .photo-frame {
     margin: 0;
@@ -161,28 +179,25 @@ a:hover {
     color: #9b6b43;
 }
 
-.project-card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-    max-width: 1100px;
-    margin: 32px 0;
-    align-items: stretch;
+.container {
+    border: 2px solid #c8c5bd;
+    margin: 40px auto;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    width: 70%;
+    box-sizing: border-box;
 }
 
-.project-image {
-    display: block;
-    width: 100%;
-    height: auto;
+#projectimg-1{
+    height:400px;
+    margin-top: 100px;
 }
 
-.project-info {
-    border: 1px solid #ccc;
-    padding: 24px;
+.text {
+    border: 1px solid #c8c5bd;
+    background-color: #fff;
+    margin: 0;
+    padding: 20px;
 }
 
-@media (max-width: 700px) {
-    .project-card {
-        grid-template-columns: 1fr;
-    }
-}
